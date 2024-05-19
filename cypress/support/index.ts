@@ -6,7 +6,8 @@ declare global {
       visitOnDomain(selector: string): Chainable<JQuery<HTMLElement>>
       visitCz(selector: string): Chainable<JQuery<HTMLElement>> 
       visitCom(selector: string): Chainable<JQuery<HTMLElement>> 
-      visitSk(selector: string): Chainable<JQuery<HTMLElement>>  
+      visitSk(selector: string): Chainable<JQuery<HTMLElement>> 
+      login(username: string, password:string): Chainable<JQuery<HTMLElement>> 
     }
   }
 }
