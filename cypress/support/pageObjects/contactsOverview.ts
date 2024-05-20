@@ -33,6 +33,7 @@ export const createRandomContact = () => {
   });
   cy.get("form").within(() => {
     cy.get('[name="invoice_attributes_name"]').type(fullName);
+    cy.get('.el-form-item__label').first().click();
     cy.get('[name="company_number"]').type(ico);
     cy.get(".vti__input").type(phone);
     cy.get("#invoice_attributes_email").type(email);
