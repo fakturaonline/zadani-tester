@@ -1,0 +1,30 @@
+name: Cypress
+
+on:
+  push:
+  workflow_dispatch:
+    
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        baseUrl: ['https://dev.fakturaonline.cz']
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          env:
+            CYPRESS_BASE_URL: ${{ matrix.baseUrl }}
