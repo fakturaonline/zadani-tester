@@ -1,5 +1,9 @@
 {
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "cypress": "^12.8.1"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
   }
 }
