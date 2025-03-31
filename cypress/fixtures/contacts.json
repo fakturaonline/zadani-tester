@@ -1,0 +1,26 @@
+[
+  {
+    "ico": "04129890",
+    "email": "podpora@fakturaonline.cz",
+    "jmeno": "",
+    "dic": "cz04129890",
+    "telefon": "333222111",
+    "web": "www.fakturaonline.cz"
+  },
+  {
+    "ico": "",
+    "email": "info@alza.cz",
+    "jmeno": "Alza.cz a.s.",
+    "dic": "cz27082440",
+    "telefon": "272366366",
+    "web": "www.alza.cz"
+  },
+  {
+    "ico": "",
+    "email": "jan.noha@alza.cz",
+    "jmeno": "Alza.cz a.s.",
+    "dic": "cz27082440",
+    "telefon": "111111111",
+    "web": "www.alza.cz"
+  }
+]
